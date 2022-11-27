@@ -95,5 +95,28 @@ public class Main {
             num++;
         }
         while (num <= 10);
+        
+        //task 10
+        for (int i = 1; i <= 30; i++){
+            if (i % 3 == 0) {
+                System.out.print(i + ": ping ");
+                if (i % 5 == 0) System.out.print("pong ");
+                System.out.println();
+            }
+            else if (i % 5 == 0) System.out.println(i + ": pong");
+            else System.out.println(i + ": ");
+        }
+        System.out.println();
+
+        //task 11
+        int zero = 0;
+        int one = 1;
+        System.out.print(zero + " " + one + " ");
+        for (int i = 0; i < 20; i++){
+            int next = zero + one;
+            System.out.print(next + " ");
+            zero = one;
+            one = next;
+        }
     }
 }
